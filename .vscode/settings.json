@@ -1,0 +1,9 @@
+{
+    "prettier.alignObjectProperties": true,
+    "prettier.arrayExpand": true,
+    "prettier.flattenTernaries": true,
+    "prettier.jsxSingleQuote": true,
+    "javascript.format.insertSpaceAfterConstructor": true,
+    "javascript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": true,
+    "javascript.format.insertSpaceBeforeFunctionParenthesis": true
+}
