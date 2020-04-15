@@ -8,7 +8,8 @@ class App extends Component {
 		super();
 		this.state = {
 			monsters    : [],
-			searchField : ''
+			searchField : '',
+			title:""
 		};
 	}
 
@@ -19,6 +20,10 @@ class App extends Component {
 			})
 		);
 	}
+
+	handlechange = e => {
+		this.setState({ searchField: e.target.value });
+	};
 	render () {
 		const monsters = this.state.monsters;
 		const searchField = this.state.searchField;
@@ -27,10 +32,8 @@ class App extends Component {
 		);
 		return (
 			<div className='App'>
-
-					<SearchBox placeholder="Search Something" handlerchange={e=>this.setState({searchField:e.target.value})}>
-
-					</SearchBox>
+				<h1>Monsters Roledex</h1>
+				<SearchBox placeholder='Search Something' handlerchange={this.handlechange} />
 				<CardList monsters={filterMonsters} />
 			</div>
 		);
